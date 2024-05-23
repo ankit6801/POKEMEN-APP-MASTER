@@ -1,0 +1,544 @@
+.info{
+    width: 85vw;
+    height: 60vh;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(30, 30, 30, 0.285);
+    padding: 1.5%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+/* _________________________________________________ cross btn _________________________________________________________ */
+
+.infobtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 4px 0 5px 10px;
+}
+
+.fa-xmark{
+    transition: all 0.3s;
+}
+
+.fa-xmark:hover{
+    transform: scale(1.2);
+}
+
+/* __________________________________________________ image ________________________________________________________ */
+
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoimage{
+    padding: 1%;
+    width: 37%;
+    background-image: linear-gradient(rgb(255, 126, 27), rgba(255, 255, 212, 0.441));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* _________________________________________________ right boxes _________________________________________________________ */
+
+.inforight{
+    width: 59%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* _________________________________________________ info bio _________________________________________________________ */
+
+.infobio{
+    width: 100%;
+    height: 50%;
+    /* background-color: lightblue; */
+    border-bottom: 0.2px solid rgba(110, 110, 110, 0.13);
+    text-align: left;
+}
+
+.infobio .infospan{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    /* border: 1px solid black; */
+}
+
+.infobio p{
+    /* border: 1px solid black; */
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.basicinfo{
+    /* border: 1px solid black; */
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.smallspans{
+    font-weight: 600;
+    color: #222;
+}
+
+/* _________________________________________________ info training _________________________________________________________ */
+
+.infotraining{
+    padding-top: 1.5rem;
+    width: 49%;
+    /* background-color: lightgreen; */
+    border-right: 0.2px solid rgba(110, 110, 110, 0.13);
+     /* border: 1px solid red; */
+    text-align: left;
+    height: 50%;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.infotraining span{
+    font-weight: 600;
+}
+
+.infotraining .trainingspan{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.infotraining .exp{
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.infotraining .moves{
+    font-size: 0.85rem;
+    height: 50px;
+}
+
+.infotraining .location{
+    font-size: 0.85rem;
+}
+
+.infotraining .location p{
+    text-align: center;
+    margin: 1px 0;
+}
+
+
+/* _________________________________________________ info stats _________________________________________________________ */
+
+
+.infostats{
+    padding-top: 1.5rem;
+    width: 49%;
+    text-align: left;
+    height: 50%;
+}
+
+.statsspan{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.allstats{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instat{
+    width: 30%;
+    text-align: center;
+}
+
+.allstats .instat .namestat{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444
+}
+
+.allstats .instat .base_stat{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #444;
+}
+
+/* ____________________________________________media queries ___________________________________________________________________ */
+
+@media (min-width : 700px) and (max-width : 920px) {
+    .infobio .infospan{
+        font-size: 1rem;
+    }
+
+    .infotraining .trainingspan{
+        font-size: 0.9rem;
+    }
+
+    .infobio .biospan{
+        font-size: 0.7rem;
+    }
+    
+    .basicinfo{
+        font-size: 0.75rem;
+    }
+
+    .infotraining .trainingparts{
+        font-size: 0.7rem;
+    }
+
+    .infostats .statsspan{
+        font-size: 0.9rem;
+    }
+
+    .allstats .instat .namestat{
+        font-size: 0.8rem;
+    }
+
+    .allstats .instat .base_stat{
+        font-size: 0.7rem;
+    }
+}
+
+/* ____________________________________________media queries ___________________________________________________________________ */
+
+@media (min-width : 530px) and (max-width : 700px) {
+
+    .infobio .infospan{
+        font-size: 1rem;
+    }
+
+    .infotraining .trainingspan{
+        font-size: 0.9rem;
+    }
+
+    .infobio .biospan{
+        font-size: 0.7rem;
+    }
+    
+    .basicinfo{
+        font-size: 0.75rem;
+    }
+
+    .infotraining .trainingparts{
+        font-size: 0.7rem;
+    }
+
+    .infostats .statsspan{
+        font-size: 0.9rem;
+    }
+
+    .allstats .instat .namestat{
+        font-size: 0.8rem;
+    }
+
+    .allstats .instat .base_stat{
+        font-size: 0.7rem;
+    }
+
+    /* ____________________________ */
+
+    .info{
+        /* height: 50vh; */
+    }
+
+    .infobio{
+        border: none;
+        height: 35%;
+    }
+
+    .infobio .biospan{
+        display: none;
+    }
+
+    .infobio .basicinfo{
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .infotraining{
+        width: 100%;
+        border: none;
+        padding-top: 0;
+        height: 30%;
+    }
+
+    .infotraining .moves{
+        height: 35px;
+    }
+
+    .infotraining .trainingparts{
+        padding-left: 1rem;
+    }
+
+    .infostats{
+        width: 100%;
+        /* border: 1px solid red; */
+        padding-top: 0.9rem;
+    }
+
+    .infoimage{
+        height: 90%;
+        margin-top: 1rem;
+    }
+
+    .main .inforight{
+        padding: 1rem 0;
+    }
+
+    .allstats{
+        height: auto;
+    }
+
+    .allstats .instat{
+        margin-top: 0.5rem;
+    }
+    
+}
+
+/* ____________________________________________media queries ___________________________________________________________________ */
+
+@media (min-width : 380px) and (max-width : 530px) {
+
+    .infobio .infospan{
+        font-size: 1rem;
+    }
+
+    .infotraining .trainingspan{
+        font-size: 0.9rem;
+    }
+
+    .infobio .biospan{
+        font-size: 0.7rem;
+    }
+    
+    .basicinfo{
+        font-size: 0.75rem;
+    }
+
+    .infotraining .trainingparts{
+        font-size: 0.7rem;
+    }
+
+    .infostats .statsspan{
+        font-size: 0.9rem;
+    }
+
+    .allstats .instat .namestat{
+        font-size: 0.8rem;
+    }
+
+    .allstats .instat .base_stat{
+        font-size: 0.7rem;
+    }
+
+    /* ____________________________ */
+
+    .info{
+        height: 60vh;
+    }
+
+    .infobio{
+        border: none;
+        height: 30%;
+        padding-top: 0.9rem;
+    }
+
+    .infobio .biospan{
+        display: none;
+    }
+
+    .infobio .basicinfo{
+        padding-top: 0.3rem;
+        padding-left: 1rem;
+    }
+
+    .infotraining{
+        width: 100%;
+        border: none;
+        padding-top: 0.3rem;
+        height: 25%;
+    }
+
+    .infotraining .moves{
+        height: 35px;
+    }
+
+    .infotraining .exp{
+        /* padding-top: 0; */
+        margin-top: 0.5rem;
+    }
+
+    .infotraining .trainingparts{
+        padding-left: 1rem;
+    }
+
+    .infotraining .trainingparts span{
+        color: #222;
+        font-size: 12px;
+    }
+
+    .infotraining .location{
+        display: none;
+    }
+
+    .infostats{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .infoimage{
+        height: 80%;
+        margin-top: 2rem;
+    }
+
+    .infoimage .number{
+        font-size: 2rem;
+    }
+
+    .infoimage .name{
+        font-size: 1.2rem;
+    }
+
+    .main .inforight{
+        padding: 1rem 0;
+    }
+
+    .allstats{
+        height: auto;
+    }
+
+    .allstats .instat{
+        margin-top: 0.5rem;
+    }
+
+}
+
+/* ____________________________________________media queries ___________________________________________________________________ */
+
+@media (min-width : 0px) and (max-width : 380px) {
+
+    .infobio .infospan{
+        font-size: 1rem;
+    }
+
+    .infotraining{
+        display: none;
+    }
+
+    .infobio .biospan{
+        font-size: 0.7rem;
+    }
+    
+    .basicinfo{
+        font-size: 0.75rem;
+    }
+
+    .infostats .statsspan{
+        font-size: 0.9rem;
+    }
+
+    .allstats .instat .namestat{
+        font-size: 0.8rem;
+    }
+
+    .allstats .instat .base_stat{
+        font-size: 0.7rem;
+    }
+
+    /* ____________________________ */
+
+    .info{
+        height: 66vh;
+        width: 95vw;
+    }
+
+    .info .infobtn{
+        z-index: 10;
+    }
+
+    .inforight{
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .infobio{
+        border: none;
+        width: 100%;
+    }
+
+    .infobio .biospan{
+        display: none;
+    }
+
+    .infobio .basicinfo{
+        padding-left: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .infostats{
+        width: 100%;
+        padding-top: 0.7rem;
+    }
+
+    .allstats{
+        height: auto;
+    }
+
+    .allstats .instat{
+        margin-top: 0.4rem;
+    }
+
+    .allstats .invisible{
+        display: none;
+    }
+
+    /* ______________________ */
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoimage{
+        width: auto;
+        height: 55%;
+        /* border: 1px solid red; */
+    }
+
+    .infoimage .image{
+        height: 60%;
+    }
+
+    .infoimage .image img{
+        height: 90%;
+    }
+
+    .infoimage .number{
+        font-size: 2rem;
+    }
+
+    .infoimage .name{
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+
+
+
+

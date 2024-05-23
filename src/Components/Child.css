@@ -1,0 +1,104 @@
+.child{
+    border: 14px solid white;
+    padding: 1% 2%;
+    width: 220px;
+    min-height: 320px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(44, 44, 44, 0.351);
+    background-image: linear-gradient(rgb(255, 126, 27), rgb(255, 255, 212));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.number{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #666;
+    position: relative;
+}
+
+img{
+    max-width: 98%;
+    max-height: 220px;
+}
+
+.name{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.moreinfo{
+    color: #333;
+    font-size: 1rem;
+    padding: 1px 9px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -15%;
+    right: -10%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.moreinfo:hover{
+    transform: scale(1.1);
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.348);
+}
+
+/* _______________________________________ media query for i button __________________________________________________ */
+
+@media ( min-width : 820px ) and ( max-width : 1200px ) {
+    .moreinfo{
+        top: -10%;
+        right: -6%;
+    }
+}
+
+@media ( min-width : 620px ) and ( max-width : 820px ) {
+    .moreinfo{
+        top: -7%;
+        right: -4%;
+        font-size: 0.8rem;
+        padding: 3px 9px;
+    }
+}
+@media ( min-width : 0px ) and ( max-width : 620px ) {
+    .moreinfo{
+        top: -2%;
+        right: -1%;
+        font-size: 0.8rem;
+        padding: 3px 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
